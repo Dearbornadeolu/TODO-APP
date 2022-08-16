@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(43, 34, 101);
+}
+p{
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.mobile{
+    background-color: rgba(148, 0, 211, 0.32);
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+h1{
+    font-size: 3.0rem;
+    background: -webkit-linear-gradient(rgb(241, 189, 19),rgba(233, 30, 7, 0.857));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
+.content{
+    background-color: white;
+    width: 80%;
+    display: block;
+    margin: auto;
+    min-height: 350px;
+    border-radius: 40px;
+    transform: translateY(-50px);
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 0 8px 10px rgba(5, 5, 5, 0.552);
+    cursor: pointer;
+}
+input{
+    border: 2px solid blue;
+    margin: auto;
+    padding: 5px;
+    font-size:1.2rem;
+}
+#inputFromUser{
+    width: 70%;
+}
+#inputFromUser{
+    padding: 10px;
+}
+#inputFromUser:focus{
+    border: 2px red solid;
+}
+ul{
+    margin-top: 10px;
+}
+li{
+    display: block;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.201);
+    cursor: pointer;
+}
+#btnDone{
+    margin-right: 2px;
+}
+#btnDone:hover{
+    color: wheat;
+    background-color: rgba(172, 255, 47, 0.505);
+}
+hr{
+    margin-bottom: 4px;
+}
+.strike{
+    text-decoration: line-through;
+}
+
+footer{
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 6px;
+}
+@media screen and (min-width: 800PX) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }.content{
+        overflow-y: scroll;
+        margin-top: 80px;
+        width: 90%;
+        scrollbar-width:none;
+        height: 400px;
+    }
+    footer{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
